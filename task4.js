@@ -1,1 +1,1 @@
-task4.js
+console.log('Задание 4')

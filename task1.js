@@ -1,3 +1,4 @@
+console.log('Задание 1')
 function check_obj (obj) {
 	
 	for (let key in obj){

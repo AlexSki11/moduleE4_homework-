@@ -1,23 +1,24 @@
-function check_key (name, obj) {
-	
-	for (key in obj){
-		if (name === key){
-			return true
-		}
+// Задание 2
 
-	}
-	return false
+console.log('Задание 2')
+function check_key (name, obj) {
+	return name in obj
 
 }
+
 
 const obj = {
 	'1':0,
 	0:1,
-	'name':Alex,
+	'name':'Alex',
 	five:5,
 
 }
 
-check_key('1', obj)
-check_key('0', obj)
-check_key(five, obj)
+console.log("Проверка на наличие свойств с именем '1' и '0' ")
+console.log(check_key('1', obj))
+console.log(check_key(0, obj))
+console.log(check_key('none', obj))
+
+
+

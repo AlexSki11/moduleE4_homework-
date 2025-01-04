@@ -1,1 +1,1 @@
-task5.js
+console.log('Задание 5')
