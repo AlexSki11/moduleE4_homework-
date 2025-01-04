@@ -58,7 +58,13 @@ console.log(check_key('none', obj))
 
 // Задание 3
 console.log('Задание 3')
+function create_obj_without_proto() {
+	return Object.create(null)
+}
 
+
+const obj_without_proto = create_obj_without_proto()
+console.log(obj_without_proto)
 // Задание 4
 console.log('Задание 4')
 
