@@ -5,8 +5,9 @@ function Device (name, power) {
 	this.power = power
 	this.turn = false
 
-	if (power<300)
+	if (power<300){
 		this.category = 'small'
+	}
 	else if (power < 1500) {
 		this.category = 'middle'
 	}
@@ -62,8 +63,9 @@ function DeskLamp(name, power, model){
 	this.turn = false
 
 
-	if (power<300)
+	if (power<300){
 		this.category = 'small'
+	}
 	else if (power < 1500) {
 		this.category = 'middle'
 	}
@@ -89,8 +91,9 @@ function Television (name,power,model,maker, os) {
 	this.turn = false
 
 
-	if (power<300)
+	if (power<300){
 		this.category = 'small'
+	}
 	else if (power < 1500) {
 		this.category = 'middle'
 	}
@@ -115,3 +118,4 @@ console.log(tv)
 
 lamp.turnOn()
 console.log(lamp.getTurn() ? lamp.getName() + ' Включена': lamp.getName() + ' Выключена')
+
